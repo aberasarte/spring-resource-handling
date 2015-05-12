@@ -16,3 +16,6 @@ build
 target
 dist
 node
+.project
+.settings
+.classpath

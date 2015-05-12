@@ -7,3 +7,6 @@ spring:
 
 app:
   version: de4db33f
+
+server:
+  contextPath: /resource-handling

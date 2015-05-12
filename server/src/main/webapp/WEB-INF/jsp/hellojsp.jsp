@@ -19,12 +19,16 @@
 <body>
     <c:url value="/css/main.css" var="jstlUrl"/>
     <spring:url value="/css/main.css" htmlEscape="true" var="springUrl" />
+    <spring:url value="" htmlEscape="true" var="changeLanguageUrl">
+    	<spring:param name="locale" value="es"/>
+    </spring:url>
     <div class="container">
             <div class="jumbotron">
             <h1 id="greeting">{insert greeting here}</h1>
     </div>
     <h2>Spring URL: ${springUrl}</h2>
     <h2>JSTL URL: ${jstlUrl}</h2>
+    <h2>Change Language URL: ${changeLanguageUrl}</h2>
     <div id="logo"></div>
     </div>
 </body>
